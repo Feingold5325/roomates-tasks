@@ -1,0 +1,13 @@
+# Secrets - never upload
+.env
+
+# Live apartment data (created by the system while it runs)
+output/
+
+# Screenshots for the report appendix (show a personal email)
+docs/screenshots/
+
+# Local tool settings and Python cache
+.claude/
+__pycache__/
+*.pyc

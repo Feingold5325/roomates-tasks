@@ -1,0 +1,18 @@
+﻿request_id,run,model,request_text,expected_domain,got_domain,domain_ok,expected_responsibility,got_responsibility,responsibility_ok,expected_urgency,got_urgency,urgency_ok,urgency_within_1,reason
+Q001,run1_basic,gemini-3.6-flash,הברז במטבח מטפטף כל הלילה ולא נסגר עד הסוף,plumbing,plumbing,yes,landlord,landlord,yes,,2,,,נזילה בברז - תשתית
+Q002,run1_basic,gemini-3.5-flash-lite,צריך להרכיב את השידה החדשה שקנינו לסלון,furniture_assembly,furniture_assembly,yes,roommates,roommates,yes,1,1,yes,yes,הרכבת רהיט של השותפים
+Q003,run1_basic,gemini-3.5-flash-lite,השקע בחדר של איה מוציא ניצוצות כשמחברים מטען,electrical,electrical,yes,landlord,landlord,yes,3,3,yes,yes,ניצוצות - סכנה בטיחותית
+Q004,run1_basic,gemini-3.6-flash,"מישהו שפך יין על השטיח בסלון, צריך לנקות לפני שזה נספג",cleaning,cleaning,yes,roommates,roommates,yes,2,2,yes,yes,ניקיון - לכל היותר 2
+Q005,run1_basic,gemini-3.5-flash-lite,הדוד לא מחמם מים כבר יומיים,plumbing,plumbing,yes,landlord,landlord,yes,3,3,yes,yes,אין מים חמים - צורך בסיסי
+M01,run2_mixed,gemini-3.5-flash-lite,"נשרפה הנורה במסדרון, צריך להחליף",electrical,electrical,yes,roommates,roommates,yes,,1,,,החלפת נורה מופיעה בפרומפט כמטלת שותפים
+M02,run2_mixed,gemini-3.5-flash-lite,"יש רטיבות ועובש בתקרה של חדר הרחצה, והכתם הולך ומתפשט",,plumbing,,landlord,landlord,yes,3,3,yes,yes,רטיבות מחמירה
+M03,run2_mixed,gemini-3.5-flash-lite,"פח האשפה במטבח מלא ומסריח, צריך לרוקן אותו",cleaning,cleaning,yes,roommates,roommates,yes,,2,,,ריקון פח
+M04,run2_mixed,gemini-3.5-flash-lite,המזגן בסלון לא נדלק בכלל,,electrical,,landlord,landlord,yes,,3,,,מזגן - תשתית
+M05,run2_mixed,gemini-3.5-flash-lite,"קנינו מדף חדש לחדר של רון, צריך לתלות אותו על הקיר",furniture_assembly,furniture_assembly,yes,roommates,roommates,yes,1,2,no,yes,תליית מדף של השותפים
+M06,run2_mixed,gemini-3.5-flash-lite,הידית של דלת הכניסה התפרקה ואי אפשר לנעול את הדלת,,furniture_assembly,,landlord,landlord,yes,,3,,,דלת - תשתית
+M07,run2_mixed,gemini-3.5-flash-lite,אחרי המסיבה יש כוסות ובקבוקים בכל הסלון,cleaning,cleaning,yes,roommates,roommates,yes,,2,,,סידור אחרי מסיבה
+M08,run2_mixed,gemini-3.5-flash-lite,האסלה ממשיכה לזרום כל הזמן אחרי ההורדה,plumbing,plumbing,yes,landlord,landlord,yes,,2,,,אסלה - צנרת
+E03,run3_edge_cases,gemini-3.5-flash-lite,asdkjh qwe zzzz,other,other,yes,unclear,unclear,yes,1,1,yes,yes,ג'יבריש
+E04,run3_edge_cases,gemini-3.5-flash-lite,משהו לא בסדר,other,other,yes,unclear,unclear,yes,1,1,yes,yes,חסרים פרטים
+E05,run3_edge_cases,gemini-3.5-flash-lite,השכנים מלמעלה עושים רעש כל לילה,other,other,yes,unclear,unclear,yes,1,1,yes,yes,רעש מחוץ לדירה
+E07,run3_edge_cases,gemini-3.5-flash-lite,The kitchen light keeps flickering,electrical,electrical,yes,,roommates,,,1,,,פנייה באנגלית

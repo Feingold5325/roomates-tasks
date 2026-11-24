@@ -1,0 +1,14 @@
+# Streamlit settings for this project (read automatically when run from this folder).
+# headless = true: skip the first-run "Email:" question, which blocks a fresh machine.
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+# Hide the developer toolbar ("Deploy" button etc.) - users don't need it
+[client]
+toolbarMode = "minimal"
+
+[theme]
+base = "light"

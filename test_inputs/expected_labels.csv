@@ -1,0 +1,18 @@
+﻿request_id,expected_domain,expected_responsibility,expected_urgency,reason
+Q001,plumbing,landlord,,נזילה בברז - תשתית
+Q002,furniture_assembly,roommates,1,הרכבת רהיט של השותפים
+Q003,electrical,landlord,3,ניצוצות - סכנה בטיחותית
+Q004,cleaning,roommates,2,ניקיון - לכל היותר 2
+Q005,plumbing,landlord,3,אין מים חמים - צורך בסיסי
+M01,electrical,roommates,,החלפת נורה מופיעה בפרומפט כמטלת שותפים
+M02,,landlord,3,רטיבות מחמירה
+M03,cleaning,roommates,,ריקון פח
+M04,,landlord,,מזגן - תשתית
+M05,furniture_assembly,roommates,1,תליית מדף של השותפים
+M06,,landlord,,דלת - תשתית
+M07,cleaning,roommates,,סידור אחרי מסיבה
+M08,plumbing,landlord,,אסלה - צנרת
+E03,other,unclear,1,ג'יבריש
+E04,other,unclear,1,חסרים פרטים
+E05,other,unclear,1,רעש מחוץ לדירה
+E07,electrical,,,פנייה באנגלית

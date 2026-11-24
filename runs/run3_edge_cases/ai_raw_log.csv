@@ -1,0 +1,7 @@
+﻿request_id,called_at,model,prompt_version,seconds,error,raw_output
+E03,2026-11-24 11:56:52,gemini-3.5-flash-lite,v2,11.37,,"{""domain"": ""other"", ""responsibility"": ""unclear"", ""urgency"": 1, ""effort"": 1, ""draft"": ""הפנייה אינה ברורה וחסרים בה פרטים, האם תוכל לפרט מה הבעיה בדירה ומה צריך לעשות?""}"
+E04,2026-11-24 11:57:16,gemini-3.5-flash-lite,v2,22.03,,"{""domain"": ""other"", ""responsibility"": ""unclear"", ""urgency"": 1, ""effort"": 1, ""draft"": ""הפנייה אינה מובנת וחסרים בה פרטים, האם תוכל לפרט מה בדיוק לא בסדר בדירה?""}"
+E05,2026-11-24 11:57:29,gemini-3.5-flash-lite,v2,11.59,,"{""domain"": ""other"", ""responsibility"": ""unclear"", ""urgency"": 1, ""effort"": 1, ""draft"": ""הפנייה עוסקת בגורם חיצוני שאינו באחריות הדירה, ולכן אין כאן משימה ברורה לביצוע. האם תרצה לסייע במשהו נוסף הקשור לתחזוקת הדירה?""}"
+E06,2026-11-24 11:57:43,gemini-3.5-flash-lite,v2,11.56,,"{""domain"": ""plumbing"", ""responsibility"": ""landlord"", ""urgency"": 2, ""effort"": 3, ""draft"": ""שלום, הברז במקלחת מטפטף ויש צורך בתיקונו. נשמח אם תוכל לשלוח אינסטלטור לבדיקה ותיקון בהקדם. תודה!""}"
+E07,2026-11-24 11:57:56,gemini-3.5-flash-lite,v2,11.75,,"{""domain"": ""electrical"", ""responsibility"": ""roommates"", ""urgency"": 1, ""effort"": 1, ""draft"": ""לבדוק ולהחליף את הנורה במטבח שמבצעת הבהובים.""}"
+E08,2026-11-24 11:58:10,gemini-3.5-flash-lite,v2,11.48,,"{""domain"": ""other"", ""responsibility"": ""unclear"", ""urgency"": 1, ""effort"": 1, ""draft"": ""הפנייה אינה מובנת וחסרים בה פרטים כדי לדעת איזו משימה יש לבצע בדירה. האם תוכל לפרט מה בדיוק קרה?""}"

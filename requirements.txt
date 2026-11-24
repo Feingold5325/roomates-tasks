@@ -1,0 +1,5 @@
+# The core (main.py) needs no external packages - only Python 3.10+.
+# This package is needed only for the browser UI (app.py).
+# 1.65.0 is the last version that supports Python 3.10 (newer ones need 3.11).
+# Keep this file ASCII-only: older pip versions fail to read Hebrew here.
+streamlit==1.65.0
