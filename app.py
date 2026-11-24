@@ -63,6 +63,14 @@ def load_table(path, columns: dict, labels: dict | None = None) -> pd.DataFrame 
 roommates = rotation.load_active_roommates()
 names = {r["roommate_id"]: r["name"] for r in roommates}
 
+# פרסום אוטומטי של התורנות: בפעם הראשונה שמישהו נכנס לממשק בשבוע חדש,
+# התורנות של השבוע מחושבת ונשמרת בלי שאיש צריך ללחוץ. החישוב דטרמיניסטי
+# (אותו שבוע -> אותו שיבוץ), ולכן אין סיכון שהוא "ישתנה" בהפעלה חוזרת.
+_this_week = rotation.week_start_of(clock.today()).isoformat()
+if not any(r["week_start"] == _this_week for r in storage.read_csv(config.WEEKLY_SCHEDULE_FILE)):
+    pipeline.run_weekly(clock.today(), source="auto",
+                        note="פרסום אוטומטי בכניסה הראשונה לשבוע")
+
 st.title("🏠 ניהול מטלות ותקלות בדירה")
 
 tab_new, tab_mine, tab_week, tab_log, tab_landlord, tab_scores = st.tabs([
@@ -157,7 +165,7 @@ with tab_mine:
         st.info(f"**{mine['weekly']['chore_name']}** - עד מוצאי שבת "
                 f"({rotation.week_range_text(mine['weekly']['week_start']).split('-')[1]})")
     else:
-        st.caption("התורנות לשבוע הזה עוד לא פורסמה (בלשונית 'תורנות שבועית').")
+        st.caption("התורנות לשבוע הזה עוד לא פורסמה.")
 
     st.markdown("#### 📌 משימות פתוחות")
     if not mine["open"]:
