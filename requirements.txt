@@ -3,3 +3,5 @@
 # 1.65.0 is the last version that supports Python 3.10 (newer ones need 3.11).
 # Keep this file ASCII-only: older pip versions fail to read Hebrew here.
 streamlit==1.65.0
+# Time zone data (Israel time on any server, including the cloud and Windows).
+tzdata
