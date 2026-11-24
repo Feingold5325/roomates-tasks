@@ -10,6 +10,7 @@ app.py - ממשק משתמש בדפדפן (Streamlit).
 לכן הצינור עובד באותה צורה עם הממשק או בלעדיו (חשוב לחלק ב).
 """
 
+import os
 from datetime import date, timedelta
 from urllib.parse import quote
 
@@ -20,6 +21,14 @@ import config
 from src import clock, pipeline, rotation, storage
 
 st.set_page_config(page_title="ניהול דירת שותפים", page_icon="🏠", layout="wide")
+
+# בענן (Streamlit Community Cloud) המפתח שמור ב-Secrets ולא בקובץ .env.
+# מעבירים אותו למשתנה הסביבה שהליבה קוראת - כך הליבה עצמה לא תלויה ב-Streamlit.
+try:
+    if config.AI_API_KEY_ENV_VAR in st.secrets:
+        os.environ.setdefault(config.AI_API_KEY_ENV_VAR, st.secrets[config.AI_API_KEY_ENV_VAR])
+except Exception:      # במחשב מקומי אין קובץ secrets - המפתח נקרא מ-.env כרגיל
+    pass
 
 st.markdown("""
 <style>

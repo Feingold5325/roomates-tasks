@@ -38,7 +38,8 @@ def load_api_key() -> str:
     if not key:
         raise RuntimeError(
             f"לא נמצא מפתח API. צרו קובץ .env בתיקיית הפרויקט עם השורה "
-            f"{config.AI_API_KEY_ENV_VAR}=המפתח_שלכם (ראו README)."
+            f"{config.AI_API_KEY_ENV_VAR}=המפתח_שלכם (ראו README). "
+            f"באתר בענן: להוסיף את המפתח ב-Settings ← Secrets."
         )
     return key
 
