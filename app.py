@@ -34,6 +34,11 @@ st.markdown("""
 <style>
   .stApp, .stMarkdown, .stTextArea, .stSelectbox, .stTabs, p, h1, h2, h3, label
       { direction: rtl; text-align: right; }
+  /* bullet lists (e.g. emergent tasks): text next to the bullet, on the right */
+  .stMarkdown ul, .stMarkdown ol, .stMarkdown li { direction: rtl; text-align: right; }
+  /* the open dropdown list of a selectbox is drawn outside the selectbox itself */
+  [data-testid="stSelectboxVirtualDropdown"], [role="listbox"], [role="option"]
+      { direction: rtl; text-align: right; }
   [data-testid="stDataFrame"] { direction: ltr; }
 </style>
 """, unsafe_allow_html=True)
